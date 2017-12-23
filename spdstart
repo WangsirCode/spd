@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+cd /Volumes/Transcend/Code/spd
+scrapy crawl spd
+cd - >/dev/null
