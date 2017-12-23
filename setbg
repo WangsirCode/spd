@@ -1,0 +1,28 @@
+
+#!/usr/bin/env bash
+#   Update all Wallpapers
+
+function wallpaper() {
+    sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "update data set value = '$1'" && killall Dock 
+}
+
+if [ $# -ne 1 ]; then
+    echo "usage: setbg /path/to/yourimage"
+elif [ ! -f $1 ]; then
+    echo "no such file";
+else
+    if [ ! -d ~/.bgimage ]; then
+        mkdir ~/.bgimage
+    fi
+    path=$1
+    filename=${path##*/}
+    
+    # if the file is a picture
+    if [[ $filename =~ .*png ]]; then
+        cp $1 ~/.bgimage/
+        wallpaper ~/.bgimage/$filename
+    else
+        echo "you should give a png file"
+    fi
+fi
+
