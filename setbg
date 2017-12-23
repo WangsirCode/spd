@@ -21,6 +21,8 @@ else
     if [[ $filename =~ .*png ]]; then
         cp $1 ~/.bgimage/
         wallpaper ~/.bgimage/$filename
+        echo "successfully change your wallpaper"
+        echo "wallpaper saved in ~/.bgimage/${filename}"
     else
         echo "you should give a png file"
     fi
