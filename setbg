@@ -18,13 +18,13 @@ else
     filename=${path##*/}
     
     # if the file is a picture
-    if [[ $filename =~ .*png ]]; then
+    if [[ $filename =~ .*png || $filename =~ .*jpg ]]; then
         cp $1 ~/.bgimage/
         wallpaper ~/.bgimage/$filename
         echo "successfully change your wallpaper"
         echo "wallpaper saved in ~/.bgimage/${filename}"
     else
-        echo "you should give a png file"
+        echo "you should give a image file"
     fi
 fi
 

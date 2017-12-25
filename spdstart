@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
-cd /Volumes/Transcend/Code/spd
-scrapy crawl spd
-cd - >/dev/null
+website=$1
+case $website in 
+    hdwallpapers | simpledesktop | wallhaven) cd /Volumes/Transcend/Code/spd && scrapy crawl $website && cd - >/dev/null;;
+    *) echo -e "usage: spdstart website_name \nwebsite supported now:   hdwallpapers simpledesktop wallhaven"
+esac
