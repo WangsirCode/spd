@@ -24,8 +24,8 @@ class WallhavenSpider(scrapy.Spider):
         image = response.xpath('//img[@id="wallpaper"]/@src').extract_first()
         image_urls = "https:" + image
         title = response.xpath('//title/text()').extract_first()
-        select_title = re.search('#.*?,',title).group()
-        filename = select_title[1:-1] + str(random.randint(1,100)) + image_urls[-4:]
+        select_title = re.search('#(.*?),',title).group(1)
+        filename = select_title + str(random.randint(1,100)) + image_urls[-4:]
         filename = filename.replace(' ','')
         # print("filename%s, image_url %s" % (filename, image_urls))
         item = SpdItem()
