@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 if [ $# -eq 0 ]; then
-    cd /Volumes/Transcend/Code/spd && scrapy crawl simpledesktop && cd - >/dev/null;
+    cd ~/.spd && scrapy crawl simpledesktop && cd - >/dev/null;
     exit
 fi
 website=$1
 case $website in 
-    hdwallpapers | simpledesktop | wallhaven) cd /Volumes/Transcend/Code/spd && scrapy crawl $website && cd - >/dev/null;;
+    hdwallpapers | simpledesktop | wallhaven) cd ~/.spd && scrapy crawl $website && cd - >/dev/null;;
     *) echo -e "usage: spdstart website_name \nwebsite supported now:   hdwallpapers simpledesktop wallhaven"
 esac
