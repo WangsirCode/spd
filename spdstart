@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+if [ $# -eq 0 ]; then
+    cd /Volumes/Transcend/Code/spd && scrapy crawl simpledesktop && cd - >/dev/null;
+    exit
+fi
 website=$1
 case $website in 
     hdwallpapers | simpledesktop | wallhaven) cd /Volumes/Transcend/Code/spd && scrapy crawl $website && cd - >/dev/null;;
