@@ -9,14 +9,14 @@ An easy way to manage your wallpaper in Mac!
     ```
     pip install scrapy
     ```
-    
+
 - wget
 
 ### Installation
 just run the following command.
 
 ```
-git clone https://github.com/WangsirCode/spd.git ~/.spd && chmod a+rx ~/.spd/spdstart && mv ~/.spd/spdstart /usr/local/bin/
+git clone https://github.com/WangsirCode/spd.git ~/.spd && make
 ```
 
 ### Usage
