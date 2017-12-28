@@ -1,6 +1,6 @@
 ## spd
 An easy way to manage your wallpaper in Mac!
-
+Search, download an image and set it as your wallpaper in one cmd!
 
 ### Requirements 
 - scrapy
