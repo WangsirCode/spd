@@ -4,6 +4,12 @@ An easy way to manage your wallpaper in Mac!
 
 ### Requirements 
 - scrapy
+    you can install scrapy via pip
+
+    ```
+    pip install scrapy
+    ```
+    
 - wget
 
 ### Installation
