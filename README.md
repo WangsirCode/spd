@@ -16,7 +16,7 @@ An easy way to manage your wallpaper in Mac!
 just run the following command.
 
 ```
-git clone https://github.com/WangsirCode/spd.git ~/.spd && make
+git clone https://github.com/WangsirCode/spd.git ~/.spd && cd ~/.spd && make
 ```
 
 ### Usage
