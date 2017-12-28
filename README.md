@@ -1,14 +1,19 @@
-##spd
+## spd
 An easy way to manage your wallpaper in Mac!
 
 
-###Requirements 
+### Requirements 
 - scrapy
 - wget
 
-###Installation
+### Installation
+just run the following command.
 
-###Usage
+```
+git clone https://github.com/WangsirCode/spd.git ~/.spd && mv ~/.spd/spdstart /usr/local/bin/
+```
+
+### Usage
 To grab an image and set it as your wallpaper, just run:
 
 ```
