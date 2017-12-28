@@ -34,6 +34,13 @@ it also support [hdwallpapers](https://www.hdwallpapers.in) and [wallhaven](http
 spdstart hdwallpapers  or spdstart wallhaven
 ```
 
+### some beautiful wallpapers
+
+![dog](http://static.simpledesktops.com/uploads/desktops/2017/07/28/Dog.png)
+![](http://static.simpledesktops.com/uploads/desktops/2016/10/12/Hydrogen_Remixed.png)
+![](http://static.simpledesktops.com/uploads/desktops/2016/02/08/sunRising.png)
+![](http://static.simpledesktops.com/uploads/desktops/2015/09/05/sunset.png)
+
 
 
 
